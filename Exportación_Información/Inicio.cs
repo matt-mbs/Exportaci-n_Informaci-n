@@ -91,7 +91,7 @@ namespace Exportación_Información
             {
                 StringBuilder sb = new StringBuilder();
 
-                // Encabezados
+                
                 for (int i = 0; i < currentTable.Columns.Count; i++)
                 {
                     sb.Append(currentTable.Columns[i].ColumnName);
@@ -100,7 +100,7 @@ namespace Exportación_Información
                 }
                 sb.AppendLine();
 
-                // Filas
+                
                 foreach (DataRow row in currentTable.Rows)
                 {
                     for (int i = 0; i < currentTable.Columns.Count; i++)
